@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --main-color: #f29301;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+section {
+    height: 535px;
+    width: 759px;
+    padding-left: 15px;
+    background-color: #fff;
+    position: relative;
+}
+.toggle {
+    display: none;
+}
+.modal-contain {
+    display: flex;
+}
+
+.image-contain {
+    height: 535px;
+    width: 286px;
+    position: relative;
+}
+.desktop-img {
+    height: inherit;
+    width: inherit;
+    /* object-fit: cover; */
+}
+.background{
+    
+    height: inherit;
+    width: inherit;
+    background-image: url('./images/img_desktop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-contain::after{
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: 0;
+    background-color: var(--main-color);
+    width: 4px;
+    height: 137px;
+}
+
+.image-contain::before {
+    content: '';
+    position: absolute;
+    bottom: 36px;
+    right: 0;
+    background-color: var(--main-color);
+    width: 4px;
+    height: 137px;
+}
+
+.text-contain{
+    padding: 100px 0 115px 56px;
+}
+
+h2 {
+    color: var(--main-color);
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.lateral-bar {
+    background-color: var(--main-color);
+    width: 70px;
+    height: 2px;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: 27px;
+    width: 265px;
+    height: 72px;
+    margin-bottom: 22px;
+}
+
+p {
+    height: 54px;
+    font-size: 20px;
+    width: 340px;
+    margin-bottom: 35px;
+}
+
+button {
+    border: 2px solid var(--main-color);
+    height: 66px;
+    width: 261px;
+    background-color: #fff;
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.close {
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    
+    transform: rotate(45deg);
+}
+
+.close::before {
+    content: '';
+    position: absolute;
+    top: 17px;
+    right: 7px;
+    height: 2px;
+    width: 20px;
+    background-color: #707070;
+}
+
+.close::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    height: 20px;
+    width: 2px;
+    background-color: #707070;
+}
+
+#launch {
+    cursor: pointer;
+    padding: 15px;
+    color: #000;
+    font-size: 20px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
